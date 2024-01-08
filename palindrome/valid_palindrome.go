@@ -7,7 +7,7 @@ Given a string s, return true if it is a palindrome, or false otherwise
 package palindrome
 
 import (
-	"algos/sliceutils"
+	"go_algos/sliceutils"
 	"regexp"
 	"strings"
 )

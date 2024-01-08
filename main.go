@@ -1,9 +1,10 @@
-package algos
+package main
 
 import (
-	"algos/palindrome"
+	"fmt"
+	"go_algos/palindrome"
 )
 
 func main() {
-	palindrome.Run()
+	fmt.Println(palindrome.LongestPalindrome("bb"))
 }
