@@ -7,7 +7,7 @@ Given a string s, return true if it is a palindrome, or false otherwise
 package palindrome
 
 import (
-	"go_algos/sliceutils"
+	"go_algos/utils"
 	"regexp"
 	"strings"
 )
@@ -15,5 +15,5 @@ import (
 func isPalindrome(s string) bool {
 	clean_s := regexp.MustCompile("[^A-Za-z0-9]").ReplaceAllString(s, "")
 	//    if len(clean_s) == 0 {return false}
-	return strings.ToLower(clean_s) == strings.ToLower(sliceutils.StringReverse(clean_s))
+	return strings.ToLower(clean_s) == strings.ToLower(utils.StringReverse(clean_s))
 }

@@ -1,4 +1,4 @@
-package sliceutils
+package utils
 
 func StringReverse(s string) (res string) {
 	runes := []rune(s)
